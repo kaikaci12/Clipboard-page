@@ -6,18 +6,12 @@
 body {
   background: #fff;
   font-family: "Bai Jamjuree";
-  font-family: "Bai Jamjuree SemiBold";
   padding: 3px 1px 0px 0px;
 }
-.title {
-  width: 1439px;
-  height: 363px;
-  background: #4c545c;
-  mix-blend-mode: multiply;
-}
+
 header {
   padding-bottom: 4px;
-  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,26 +29,16 @@ header {
 }
 header h2 {
   margin-top: 56px;
-  width: 730px;
-  color: #4c545c;
+  font-family: "Bai Jamjuree SemiBold";
   text-align: center;
-  font-size: 46px;
-  font-weight: 600;
-  letter-spacing: -0.75px;
 }
 .clip-board-benefits {
+  display: flex;
+  justify-content: center;
   margin-top: 16px;
 }
-.clip-board-benefits span {
-  display: inline-block;
-  color: #9eabb2;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.15px;
-  max-width: 730px;
-
-  text-align: center;
+.clip-board-benefits p {
+  max-width: 650px;
 }
 .download-ios {
   display: flex;
@@ -67,7 +51,7 @@ header h2 {
   box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5),
     0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 }
-.download {
+.downloads {
   margin-top: 48px;
   gap: 16px;
   display: flex;
@@ -75,7 +59,8 @@ header h2 {
   justify-content: center;
   align-items: center;
 }
-.download-ios span {
+.download-ios span,
+.download-mac span {
   color: #fff;
 
   font-size: 18px;
@@ -94,73 +79,61 @@ header h2 {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1),
     0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 }
-.download-mac span {
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 30px;
-  letter-spacing: 0.5px;
-}
-.middle-part {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 19px;
-  margin-top: 150px;
-}
-.description h2 {
+
+h2 {
   width: 730px;
   color: #4c545c;
+  text-align: center;
+  font-family: "Bai Jamjuree SemiBold";
   font-size: 36px;
   font-weight: 600;
   letter-spacing: -0.587px;
-  text-align: center;
 }
-.description span {
-  display: inline-block;
-  max-width: 620px;
-  color: #9eabb2;
-  text-align: center;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
-.main-part .abilities h3 {
+
+h3 {
   width: 350px;
   color: #4c545c;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.391px;
 }
-.abilities span {
-  display: inline-block;
-  max-width: 300px;
+p {
   color: #9eabb2;
-  font-size: 16px;
+  text-align: center;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.135px;
 }
+.middle-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.middle-part p {
+  max-width: 730px;
+  margin-top: 19px;
+}
+
 .main-part {
   display: flex;
+  flex-direction: row;
   margin-top: 80px;
   justify-content: center;
   align-items: center;
   margin-right: 260px;
 }
 .abilities {
-  margin-top: 68px;
   display: flex;
   flex-direction: column;
-  gap: 56px;
   margin-left: 110px;
+  gap: 56px;
+}
+.abilities p {
+  max-width: 390px;
+  text-align: start;
 }
 
 .accessibility {
@@ -171,29 +144,14 @@ header h2 {
   justify-content: center;
   align-items: center;
 }
-.accessibility h2 {
-  width: 730px;
-  color: #4c545c;
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -0.587px;
+
+.accessibility p {
+  max-width: 730px;
   text-align: center;
 }
-.accessibility span {
-  display: inline-block;
-  width: 600px;
-  color: #9eabb2;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
-.devices {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.accessibility img {
   margin-top: 111px;
+  border-radius: 20px;
 }
 .workflow {
   margin-top: 162px;
@@ -203,23 +161,7 @@ header h2 {
   align-items: center;
   gap: 19px;
 }
-.workflow h2 {
-  width: 730px;
-  color: #4c545c;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -0.587px;
-}
-.workflow span {
-  max-width: 730px;
-  color: #9eabb2;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
+
 .capabilities {
   display: flex;
   margin-top: 77px;
@@ -228,6 +170,7 @@ header h2 {
   align-items: center;
 }
 .blacklists {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -239,22 +182,13 @@ header h2 {
   height: 40px;
 }
 .blacklists h3 {
-  width: 350px;
-  color: #4c545c;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.391px;
   margin-top: 24px;
 }
-.blacklists span {
-  max-width: 300px;
+.blacklists p {
+  max-width: 400px;
   color: #9eabb2;
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.12px;
 }
 .text-snippets {
   display: flex;
@@ -265,23 +199,11 @@ header h2 {
 }
 .text-snippets h3 {
   margin-top: 28px;
-  width: 350px;
-  color: #4c545c;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.391px;
 }
-.text-snippets span {
-  max-width: 320px;
-  color: #9eabb2;
+.text-snippets p {
+  max-width: 400px;
   text-align: center;
-
-  font-size: 16px;
-
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.12px;
 }
 .sneak-preview {
   display: flex;
@@ -292,30 +214,18 @@ header h2 {
 }
 .sneak-preview h3 {
   margin-top: 28px;
-  width: 350px;
-  color: #4c545c;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -0.391px;
 }
-.sneak-preview span {
-  max-width: 320px;
-  color: #9eabb2;
+.sneak-preview p {
+  max-width: 350px;
   text-align: center;
-
-  font-size: 16px;
-
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.12px;
 }
 .online-platforms {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 160px;
-  gap: 50px;
+  gap: 120px;
 }
 .ending-part {
   margin-top: 150px;
@@ -325,36 +235,18 @@ header h2 {
   align-items: center;
   gap: 19px;
 }
-.ending-part h2 {
+.ending-part p {
   width: 730px;
-  color: #4c545c;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -0.587px;
-}
-#availability {
-  max-width: 650px;
-  color: #9eabb2;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
-.downloads {
-  display: flex;
-  gap: 16px;
-  margin-top: 29px;
 }
 
-.contact-info img {
+.footer img {
   width: 55px;
   height: 55px;
   fill: #26bba4;
 }
 
-.contact-info {
+.footer {
+  padding: 0px 165px 0px 165px;
   display: flex;
   margin-top: 150px;
 
@@ -362,47 +254,33 @@ header h2 {
   align-items: center;
   background: rgb(246, 245, 245);
   max-width: 100%;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.first-half {
-  display: flex;
-  margin-left: 165px;
-}
-.upper-spans span {
-  max-width: 160px;
-  color: #4c545c;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
-.down-spans span {
-  max-width: 160px;
-  color: #4c545c;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.135px;
-}
-.faqs {
-  width: 82px;
-}
-
-.upper-spans,
-.down-spans {
+.contact-links {
   display: flex;
   gap: 30px;
 }
-.down-spans {
-  margin-top: 12px;
+.contact-links span {
+  width: 160px;
+  color: #4c545c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.135px;
 }
-.spans {
-  margin-left: 135px;
+.contact,
+.privacy,
+.install {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .social-medias img {
-  width: 120px;
   height: 24px;
+  width: 24px;
 }
 .social-medias {
-  margin-left: 500px;
+  display: flex;
+
+  gap: 24px;
 }

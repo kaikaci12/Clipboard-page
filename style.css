@@ -281,6 +281,17 @@ p {
 }
 .social-medias {
   display: flex;
-
   gap: 24px;
+}
+/* setting up pointers */
+.downloads:hover {
+  cursor: pointer;
+}
+.contact-links span:hover {
+  cursor: pointer;
+  color: #26bba4;
+}
+.social-medias img:hover {
+  cursor: pointer;
+  background-color: #26bba4;
 }
